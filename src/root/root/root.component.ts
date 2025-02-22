@@ -1,15 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
+import { RouterOutlet } from "@angular/router";
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './root.component.html',
-  styleUrls: ['./root.component.css']
+  selector: "app-root",
+  imports: [RouterOutlet],
+  templateUrl: "./root.component.html",
+  styleUrls: ["./root.component.css"],
 })
 export class RootComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }
