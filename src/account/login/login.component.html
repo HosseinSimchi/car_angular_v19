@@ -1,3 +1,75 @@
-<p>
-  login works!
-</p>
+<div class="bg-[#D7D7D7] flex justify-center items-center w-screen h-screen">
+  <div class="w-[1,016px] h-[856px] flex">
+    <div
+      class="w-[660px] h-[856px] flex justify-between items-center bg-[#FFFFFF] flex-col"
+    >
+      <div class="h-[50%] flex justify-between flex-col items-center">
+        <div
+          class="flex items-center justify-between w-[151px] h-[59px] mt-[32px]"
+        >
+          <img src="images/logo.png" alt="car_logo" class="w-[59px] h-[59px]" />
+          <p class="flex">
+            <span class="text-[24px] font-[900px] text-[#FDB713]">رِنت</span
+            ><span class="text-[#194BF0] text-[24px] font-[900px]">اُتــو</span>
+          </p>
+        </div>
+        <div class="flex flex-col justify-center items-center gap-y-[20px]">
+          <div class="h-[35px]">
+            <p class="text-[20px] font-[700px] text-[#494949]">
+              ورود یا ثبت‌نام
+            </p>
+          </div>
+          <div>
+            <p class="text-[14px] font-[400px] text-[#494949] h-[25px]">
+              کد تایید به شماره موبایلی که وارد می‌کنید، ارسال خواهد شد.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="h-[50%] flex flex-col">
+        <div class="max-w-md mx-auto mt-10">
+          <label
+            for="phone-number"
+            class="block text-sm font-medium text-gray-700"
+            >Phone Number</label
+          >
+          <div class="mt-1 relative rounded-md shadow-sm">
+            <!-- Country Code and Flag -->
+            <div
+              class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none"
+            >
+              <!-- Country Code -->
+              <!-- TODO: change the below code to support persian number in site -->
+              <span class="text-[#0C0C0C] font-normal text-sm">| +۹</span>
+              <!-- Flag Image -->
+              <img
+                class="w-[24px] h-[24px] mr-2"
+                src="images/Flag.png"
+                alt="Iran Flag"
+              />
+            </div>
+            <!-- Phone Number Input -->
+            <input
+              type="tel"
+              id="phone-number"
+              name="phone-number"
+              class="block w-full pl-20 pr-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+              placeholder="912-345-6789"
+              maxlength="10"
+            />
+          </div>
+          <p class="mt-2 text-sm text-gray-500">
+            Enter a valid Iranian phone number (e.g., 912-345-6789).
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="">
+      <img
+        src="images/car_login.png"
+        alt="car_login"
+        class="w-[358px] h-[855px] rounded-tl-[16px] rounded-bl-[16px]"
+      />
+    </div>
+  </div>
+</div>
